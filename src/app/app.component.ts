@@ -27,7 +27,9 @@ export class AppComponent{
 	ngOnInit(){}
 
 	ngAfterViewInit(){
-		this.pointOfLight.position.set(0,10,10);
+		this.pointOfLight.position.set(10,10,10);
+		this.pointOfLight.decay = 0;
+		this.pointOfLight.distance = 50;
 		
 		this.scene.add(this.pointOfLight, this.ambientLight);
 		this.scene.add(this.lightHelper, this.gridHelper);
