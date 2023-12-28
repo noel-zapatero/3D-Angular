@@ -3,3 +3,16 @@ canvas{
 	top: 0;
 	left: 0;
 }
+
+.loremIp{
+	position: absolute;
+	font-size: 30px;
+	width: 100vw;
+	z-index: 99;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.sector{
+	grid-column: 1/8;
+}
